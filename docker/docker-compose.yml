@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    command: redis-server --requirepass ${PASSWORD}
+    ports:
+      - "${PORT}"
+    container_name: redis
+    env_file:
+      - ./environment.env
