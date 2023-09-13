@@ -12,6 +12,10 @@ Este repositório contém exemplos e informações relacionados aos meus estudos
 ## O que é Redis?
 
 O Redis é um banco de dados NoSQL em memória, conhecido por sua alta velocidade e flexibilidade. Ele é usado para várias finalidades, incluindo armazenamento em cache, filas de mensagens, análises em tempo real e muito mais. Neste repositório, estou explorando como usar o Redis em conjunto com Python.
+Para popular o banco realizo o consumo de dados via API do Spotify, utilizando a lib python Spotipy.
+
+[Spotipy](https://spotipy.readthedocs.io/en/2.12.0/)
+
 
 ## Configuração
 
@@ -26,5 +30,7 @@ Para realizar a criação do container utilize o comando :
 ```bash 
 docker-compose --env-file {seu_arquivo.env}  up -d 
 ```
+Para acesso ao dados do Spotify deve ser registrado um app no spotify para garantir o acesso a api, abaixo o link da documentação com mais detalhes.
 
+[API_Spotify](https://developer.spotify.com/documentation/web-api)
 
